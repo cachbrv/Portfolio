@@ -1,0 +1,19 @@
+.navbar-logo {
+    height: 100%;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.navbar-toggler {
+    border: 0px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
