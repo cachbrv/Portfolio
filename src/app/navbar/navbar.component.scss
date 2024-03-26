@@ -17,3 +17,9 @@
 .nav-item {
     margin-left: 10px;
 }
+
+.navbar {
+    background-color: transparent;
+    border-bottom: 0.0005em solid lightgray;
+    z-index: 1;
+}

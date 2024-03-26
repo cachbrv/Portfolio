@@ -12,4 +12,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 export class NavbarComponent {
   activeId = 0;
   isCollapsed = false;
+
+  ngAfterContentInit() {
+    // if (!this.isCollapsed) {
+    //   $(".navbar")
+    // }
+  }
 }
