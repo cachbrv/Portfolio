@@ -1,4 +1,9 @@
+<div>
   <app-navbar></app-navbar>
-  <router-outlet></router-outlet> 
-
-  <app-carrousel></app-carrousel>
+  <div class="container">
+    <router-outlet></router-outlet>
+    <app-carrousel></app-carrousel>
+    <app-skill-info [skills]="skillInfo"></app-skill-info>
+    <app-project-info [info]="projectInfo"></app-project-info>
+  </div>
+</div>

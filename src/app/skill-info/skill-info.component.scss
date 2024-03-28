@@ -1,0 +1,38 @@
+.card-skill {
+    background-color: darkgray;
+    margin: 10px;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    display: inline-flex;
+}
+
+.card-skill :hover {
+    background-color: lightblue;
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+.card-skill svg {
+    position: relative;
+    height: 90px;
+    width: 90px;
+    margin: auto;
+    display: block;
+}
+
+.card-skill svg image {
+    width: 90px;
+    height: 90px;
+}
+
+.card-body-skill {
+    margin: auto;
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    // top: 140px;
+    font-weight: bold;
+}

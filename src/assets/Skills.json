@@ -1,0 +1,30 @@
+[  
+  {  
+    "name": "C#",  
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/C_Sharp_Logo_2023.svg"
+  },  
+  {  
+    "name": "JavaScript",  
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1280px-Unofficial_JavaScript_logo_2.svg.png"
+  },   
+  {  
+    "name": "CSS",  
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/langfr-1024px-CSS3_logo_and_wordmark.svg.png"
+  },
+  {  
+    "name": "HTML",  
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg?uselang=fr"
+  },  
+  {  
+    "name": "Sql",  
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sql_data_base_with_logo.svg/640px-Sql_data_base_with_logo.svg.png"
+  },  
+  {  
+    "name": "Swift",  
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Swift_logo.svg/640px-Swift_logo.svg.png"
+  },  
+  {  
+    "name": "C++",  
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/640px-ISO_C%2B%2B_Logo.svg.png"
+  }
+]

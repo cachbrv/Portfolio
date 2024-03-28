@@ -1,0 +1,12 @@
+<div class="card-deck card-group-skill">
+    @for (skill of skills; track skill) {
+        <div class="card card-skill">
+            <svg>
+                <image [attr.xlink:href]="skill.url"/>    
+            </svg>
+            <div class="card-body card-body-skill">
+                <div class="card-title">{{ skill.name }}</div>
+            </div>
+        </div>
+    }
+</div>
