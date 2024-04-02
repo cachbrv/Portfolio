@@ -1,3 +1,10 @@
+.card-group-skill {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 .card-skill {
     background-color: darkgray;
     margin: 10px;

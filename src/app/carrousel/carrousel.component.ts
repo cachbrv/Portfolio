@@ -18,6 +18,7 @@ export class CarrouselComponent {
   "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/640px-ISO_C%2B%2B_Logo.svg.png"];
 
   constructor(config: NgbCarouselConfig) {
+    config.interval = 200;
 		config.wrap = true;
 		config.keyboard = false;
 		config.pauseOnHover = true;

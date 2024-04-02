@@ -1,0 +1,21 @@
+$accent-color: orange;
+
+.about {
+    display: block;
+    margin-bottom: 50px;
+    border-bottom: 1px solid $accent-color;
+}
+
+.about tbody {
+    width: 100%;
+    display: table;
+}
+
+.about img {
+    height: 600px;
+    float: right;
+}
+
+.about b {
+    color: $accent-color;
+}
