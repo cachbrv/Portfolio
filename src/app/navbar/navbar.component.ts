@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ViewportScroller } from "@angular/common";
 
 @Component({
   selector: 'app-navbar',
@@ -10,4 +11,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 })
 
 export class NavbarComponent {
+  constructor(private scroller: ViewportScroller) {}
+  ScrollIntoView(target: string) {
+    this.scroller.scrollToAnchor(target);
+  }
 }

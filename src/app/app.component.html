@@ -1,11 +1,10 @@
 <div>
   <app-navbar></app-navbar>
   <div class="container">
-    <router-outlet></router-outlet>
-    <app-about></app-about>
+    <app-about id="about"></app-about>
     <!-- <app-carrousel></app-carrousel> -->
     <app-skill-info [skills]="skillInfo"></app-skill-info>
-    <app-project-info [info]="projectInfo"></app-project-info>
-    <app-contact></app-contact>
+    <app-project-info id="portfolio" [info]="projectInfo"></app-project-info>
+    <app-contact id="contact"></app-contact>
   </div>
 </div>
