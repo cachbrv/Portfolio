@@ -6,7 +6,9 @@
 }
 
 .card-skill {
-    background-color: gray;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     margin: 10px;
     border-radius: 20px;
     width: 150px;
@@ -15,9 +17,9 @@
 }
 
 .card-skill :hover {
-    background-color: lightblue;
+    background-color: white;
     border-radius: 20px;
-    opacity: 0.5;
+    opacity: 0.1;
 }
 
 .card-skill svg {

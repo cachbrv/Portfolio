@@ -16,10 +16,16 @@ export class AboutComponent {
 		const modelViewer = document.querySelector<ModelViewerElement>("#myModel");
     if (modelViewer != null) {
       let coordinates = modelViewer.getBoundingClientRect();
-
-      let xdeg = coordinates.x > e.clientX ? "40" : (coordinates.x < e.clientX ? "-20" : "10");
-      let ydeg = coordinates.y > e.clientY ? "110" : (coordinates.y < e.clientY ? "50" : "90");
-		  modelViewer.cameraOrbit = `${xdeg}deg ` + `${ydeg}deg ` + `"0%"`;
+      
+      let notTooFar = (Math.abs(coordinates.x - e.clientX) < 400) && (Math.abs(coordinates.y - e.clientY) < 400);
+      if (!notTooFar) {
+        modelViewer.cameraOrbit = `${15}deg ` + `${90}deg ` + `"0%"`;
+      }
+      else {
+        let xdeg = coordinates.x > e.clientX ? "40" : (coordinates.x < e.clientX ? "-20" : "10");
+        let ydeg = coordinates.y > e.clientY ? "110" : (coordinates.y < e.clientY ? "50" : "90");
+        modelViewer.cameraOrbit = `${xdeg}deg ` + `${ydeg}deg ` + `"0%"`;
+      }
     }
   }
 }
