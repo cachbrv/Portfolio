@@ -1,28 +1,14 @@
-<header>
-        <!-- <ul ngbNav [(activeId)]="activeId" class="nav-tabs">
-            <li [ngbNavItem]="1">
-                <button ngbNavLink>First</button>
-            </li>
-            <li [ngbNavItem]="2">
-                <button ngbNavLink>Second</button>
-            </li>
-        </ul> -->
+<header>    
     <nav class="navbar navbar-expand-lg navbar-dark ">
         <a class="navbar-brand" href="#">
             <div class="navbar-logo">
                 <img style="width: 50px; height: 50px;" src="/assets/turtle.gif">
             </div>
         </a>
-        <a class="navbar-brand" href="#">Lrv</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse" #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+        <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">About</a>
             <a class="nav-item nav-link" href="#">Portfolio</a>
             <a class="nav-item nav-link" href="#">Contact</a>
-          </div>
         </div>
     </nav>
 </header>

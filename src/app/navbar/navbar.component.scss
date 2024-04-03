@@ -6,6 +6,11 @@
     display: flex;
 }
 
+.navbar-nav {
+    margin: auto;
+    flex-direction: row;
+}
+
 .navbar-toggler {
     border: 0px;
 }
@@ -18,8 +23,12 @@
     margin-left: 10px;
 }
 
-.navbar {
-    background-color: transparent;
-    border-bottom: 0.0005em solid lightgray;
-    z-index: 1;
+.navbar {  
+    background-color: #00000050 !important;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-shadow: 0 0 1em rgba(0, 0, 255, 0.027);
+    height: 70px;
 }
