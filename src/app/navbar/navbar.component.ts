@@ -12,6 +12,7 @@ import { ViewportScroller } from "@angular/common";
 
 export class NavbarComponent {
   constructor(private scroller: ViewportScroller) {}
+  
   ScrollIntoView(target: string) {
     this.scroller.scrollToAnchor(target);
   }
