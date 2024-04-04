@@ -1,4 +1,13 @@
-.container > * {
+.container-fluid > * {
     display: block;
     margin-bottom: 80px;
+}
+
+.main-container {
+    padding-right: none;
+    padding-left: none;
+}
+
+.portfolio {
+    background-color: rgba(42, 42, 43, 0.6);
 }

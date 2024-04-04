@@ -25,11 +25,13 @@
 }
 
 .navbar {  
-    background-color: #00000050 !important;
-    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(5em);
     position: fixed;
     top: 0px;
     width: 100%;
     box-shadow: 0 0 1em rgba(0, 0, 255, 0.027);
     height: 70px;
+    border-bottom: 1px solid rgba(83, 83, 95, 0.48) !important;
+    z-index: 1;
 }

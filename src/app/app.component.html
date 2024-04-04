@@ -1,10 +1,9 @@
 <div>
   <app-navbar></app-navbar>
-  <div class="container">
-    <app-about id="about"></app-about>
-    <!-- <app-carrousel></app-carrousel> -->
+  <div class="container-fluid main-container g-0">
+    <app-about class="about" id="about"></app-about>
     <app-skill-info [skills]="skillInfo"></app-skill-info>
-    <app-project-info id="portfolio" [info]="projectInfo"></app-project-info>
+    <app-project-info class="portfolio" id="portfolio" [info]="projectInfo"></app-project-info>
     <app-contact id="contact"></app-contact>
   </div>
 </div>

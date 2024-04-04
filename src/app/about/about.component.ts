@@ -10,7 +10,7 @@ import { ModelViewerElement } from '@google/model-viewer';
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AboutComponent {
-  @HostListener('document:mousemove', ['$event']) 
+  @HostListener('document:mousemove', ['$event'])
   
   onMouseMove(e: MouseEvent) {
 		const modelViewer = document.querySelector<ModelViewerElement>("#myModel");
@@ -19,12 +19,17 @@ export class AboutComponent {
       
       let notTooFar = (Math.abs(coordinates.x - e.clientX) < 400) && (Math.abs(coordinates.y - e.clientY) < 400);
       if (!notTooFar) {
-        modelViewer.cameraOrbit = `${15}deg ` + `${90}deg ` + `"0%"`;
+        if (modelViewer.cameraOrbit != `${15}deg ` + `${90}deg ` + `"0%"`) {
+          modelViewer.cameraOrbit = `${15}deg ` + `${90}deg ` + `"0%"`;
+        }
       }
       else {
         let xdeg = coordinates.x > e.clientX ? "40" : (coordinates.x < e.clientX ? "-20" : "10");
         let ydeg = coordinates.y > e.clientY ? "110" : (coordinates.y < e.clientY ? "50" : "90");
-        modelViewer.cameraOrbit = `${xdeg}deg ` + `${ydeg}deg ` + `"0%"`;
+        
+        if (modelViewer.cameraOrbit != `${xdeg}deg ` + `${ydeg}deg ` + `"0%"`) {
+          modelViewer.cameraOrbit = `${xdeg}deg ` + `${ydeg}deg ` + `"0%"`;
+        }
       }
     }
   }

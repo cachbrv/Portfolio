@@ -7,19 +7,21 @@
 
 .card-skill {
     background-color: transparent;
-    backdrop-filter: blur(5px);
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     margin: 10px;
     border-radius: 20px;
     width: 150px;
     height: 150px;
     display: inline-flex;
+    box-shadow: 10px 10px 56px 0px rgba(0,0,0,0.75);
 }
 
 .card-skill :hover {
-    background-color: white;
     border-radius: 20px;
+    background-color: white;
+    box-shadow: none;
     opacity: 0.1;
+    cursor: pointer;
 }
 
 .card-skill svg {
@@ -42,6 +44,5 @@
     height: 100%;
     width: 100%;
     text-align: center;
-    // top: 140px;
     font-weight: bold;
 }
