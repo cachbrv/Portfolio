@@ -1,9 +1,7 @@
 .navbar-logo {
     height: 100%;
-    width: 50px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    margin: 10px;
+    position: relative;
 }
 
 .navbar-nav {
@@ -22,6 +20,12 @@
 .nav-item {
     margin-left: 10px;
     cursor: pointer;
+}
+
+.nav-item:hover {
+    background: radial-gradient(circle at top left, rgba(210, 168, 255, 1) 0%, rgba(86, 211, 100, 1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar {  

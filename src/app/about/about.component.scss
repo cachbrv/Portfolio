@@ -1,9 +1,6 @@
-$accent-color: darkgreen;
-
 .about {
     display: block;
     margin-bottom: 50px;
-    border-bottom: 1px solid $accent-color;
 }
 
 .about tbody {
@@ -12,17 +9,30 @@ $accent-color: darkgreen;
 }
 
 .about img {
-    height: 600px;
+    height: 300px;
     float: right;
 }
 
-.about b {
-    color: $accent-color;
+.threedmodel {
+    height: 1000px;
+    width: 1000px;
+    --progress-bar-color: transparent;
 }
 
-.threedmodel {
-    position: relative;
-    top: 490px;
-    left: 400px;
-    --progress-bar-color: transparent;
+.radiant-color {
+    background: linear-gradient(-45deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
