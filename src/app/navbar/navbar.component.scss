@@ -1,6 +1,7 @@
 .navbar-logo {
     height: 100%;
-    margin: 10px;
+    left: 10px;
+    top: 5px;
     position: relative;
 }
 
@@ -36,6 +37,5 @@
     width: 100%;
     box-shadow: 0 0 1em rgba(0, 0, 255, 0.027);
     height: 70px;
-    border-bottom: 1px solid rgba(83, 83, 95, 0.48) !important;
     z-index: 1;
 }
