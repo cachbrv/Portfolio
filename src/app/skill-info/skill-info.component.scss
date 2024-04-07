@@ -22,12 +22,12 @@
     display: inline-flex;
 }
 
-.card-skill :hover {
-    border-radius: 20px;
-    box-shadow: none;
-    opacity: 0.1;
-    cursor: pointer;
-}
+// .card-skill :hover {
+//     border-radius: 20px;
+//     box-shadow: none;
+//     opacity: 0.1;
+//     cursor: pointer;
+// }
 
 .card-skill svg {
     position: relative;
@@ -52,6 +52,12 @@
     font-weight: bold;
 }
 
+.card-skill:hover {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) border-box;
+    opacity: 0.9;
+    border: 2px solid white;
+}
+
 .gradient-border-mask {
     display: flow-root;
     position: relative;
@@ -74,3 +80,6 @@
     mask-composite: exclude;
   }
   
+  .gradient-border-mask:hover:before {
+    // background: none;
+  }
