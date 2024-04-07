@@ -31,11 +31,14 @@
 .card .card-img-top {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .card .card-footer {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    background: transparent;
 }
 
 .card-body {
@@ -50,13 +53,51 @@
     display: block;
     margin: auto;
     position: relative;
+    border-radius: 20px;
     bottom: 10px;
     width: 200px;
+    background: radial-gradient(circle at top left, #ee7752 0%, #e73c7e 35%, #23a6d5 65%, #23d5ab 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+.card-footer .btn:hover {
+    background-clip: unset;
+    -webkit-text-fill-color: white;
+    color: white;
+    border: 1px solid white;
+}
+
+.gradient-border-mask {
+    display: flow-root;
+    position: relative;
+    background: transparent;
+  }
+  
+  .gradient-border-mask::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+
+  .gradient-border-mask:hover:before {
+    background: none;
+  }
+
 .card-footer .btn svg {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     position: absolute;
     left: 10px;
+    fill: #23a6d5;
+    bottom: 7px;
 }

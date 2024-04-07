@@ -2,13 +2,15 @@
     <h2 style="text-align: center; margin-bottom: 40px; position: relative;">&#60;skills&#47;&#62;</h2>
     <div class="card-deck card-group-skill">
         @for (skill of skills; track skill) {
-        <div class="card card-skill">
-            <svg>
-                <image [attr.xlink:href]="skill.url" />
-            </svg>
-            <div class="card-body card-body-skill">
-                <!-- <div class="card-title">{{ skill.name }}</div> -->
-            </div>
+        <div class="card card-skill gradient-border-mask">
+            <!-- <div class="card-content"> -->
+                <svg>
+                    <image [attr.xlink:href]="skill.url" />
+                </svg>
+                <!-- <div class="card-body card-body-skill">
+                    <div class="card-title">{{ skill.name }}</div>
+            </div> -->
+        <!-- </div> -->
         </div>
         }
     </div>
