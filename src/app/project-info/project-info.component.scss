@@ -10,7 +10,7 @@
 }
 
 .card-info {
-    margin: 10px;
+    margin: 15px;
     background-color: transparent;
     border: none;
     border-radius: 20px;
@@ -26,6 +26,29 @@
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
+}
+
+.card-background {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card-background:hover {
+    background-color: #695273;
+    transform: translate(20px, 20px);
+    transform: translate(20px, 20px);
+    transition-duration: 750ms;
+
+    .card-footer .btn {
+        background-clip: unset;
+        -webkit-text-fill-color: white;
+        color: white;
+        border: 2px solid white;
+    }
+
+    .gradient-border-mask::before { 
+        border: none;
+    }
 }
 
 .card .card-img-top {
@@ -65,7 +88,7 @@
     background-clip: unset;
     -webkit-text-fill-color: white;
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 .card-footer .btn svg {
