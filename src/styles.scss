@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    // Variables
+    --linear-gradient-main: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    --linear-gradient-main-reversed: linear-gradient(-45deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
+    --radial-gradient-light: radial-gradient(circle at top left, rgba(210, 168, 255, 1) 0%, rgba(86, 211, 100, 1) 100%);
+    --radial-gradient-full: radial-gradient(circle at top left, #ee7752 0%, #e73c7e 35%, #23a6d5 65%, #23d5ab 100%);
+}
+
+.gradient-border-mask {
+    display: flow-root;
+    position: relative;
+    background: transparent;
+  }
+  
+  .gradient-border-mask::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background: var(--linear-gradient-main) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+
+  .gradient-border-mask:hover:before {
+    background: none;
+  }
+
+  
+.radiant-color {
+    background: var(--linear-gradient-main-reversed);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

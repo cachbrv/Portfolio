@@ -24,7 +24,7 @@
 }
 
 .nav-item:hover {
-    background: radial-gradient(circle at top left, rgba(210, 168, 255, 1) 0%, rgba(86, 211, 100, 1) 100%);
+    background: var(--radial-gradient-light);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
