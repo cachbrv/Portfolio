@@ -7,13 +7,37 @@ import { ModelViewerElement } from '@google/model-viewer';
   imports: [],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss',
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AboutComponent {
+  goingLeft: boolean = true;
+
+  @HostListener('document:DOMContentLoaded', ['$event'])
+
+  onLoad() {
+    // Animation rotating the 3dmodel from left to right
+    const modelViewer = document.querySelector<ModelViewerElement>("#myModel");
+    const values = modelViewer!.cameraOrbit.split(' ');
+    var yaxis = Number(values[0].replace('deg', ''));
+
+    if (yaxis > 60) {
+      this.goingLeft = false;
+    }
+    else if (yaxis < 15) {
+      this.goingLeft = true;
+    }
+
+    yaxis += this.goingLeft ? 0.05 : -0.05;
+
+    // Rotating model on y axis
+    modelViewer!.cameraOrbit = `${yaxis}deg ` + `${values[1]} ` + `${values[2]}`;
+    window.requestAnimationFrame(() => this.onLoad());
+  }
+
   @HostListener('document:mousemove', ['$event'])
-  
+
   onMouseMove(e: MouseEvent) {
-		const modelViewer = document.querySelector<ModelViewerElement>("#myModel");
+    const modelViewer = document.querySelector<ModelViewerElement>("#myModel");
     if (modelViewer != null) {
       let coordinates = modelViewer.getBoundingClientRect();
       let midX = coordinates.x + coordinates.width / 2;
@@ -28,7 +52,7 @@ export class AboutComponent {
       else {
         let xdeg = midX > e.clientX ? "40" : (midX < e.clientX ? "-20" : "10");
         let ydeg = midY > e.clientY ? "110" : (midY < e.clientY ? "50" : "90");
-        
+
         if (modelViewer.cameraOrbit != `${xdeg}deg ` + `${ydeg}deg ` + `"0%"`) {
           modelViewer.cameraOrbit = `${xdeg}deg ` + `${ydeg}deg ` + `"0%"`;
         }

@@ -34,8 +34,14 @@
   }
 
   
+.radiant-color-reversed {
+  background: var(--linear-gradient-main-reversed);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
 .radiant-color {
-    background: var(--linear-gradient-main-reversed);
+  background: var(--linear-gradient-main);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
 }
