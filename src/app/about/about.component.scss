@@ -21,13 +21,42 @@
 }
 
 @keyframes blooping {
-	0% {
-		transform: translate(0px, 0px);
-	}
-	50% {
-		transform: translate(0px, 30px);
-	}
-	100% {
-		transform: translate(0px, 0px);
-	}
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(0px, 30px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.about-logos {
+    display: grid;
+    width: 70px;
+}
+
+.about-logos a {
+    width: 30px;
+    margin: auto;
+}
+
+.about-logos a svg {
+    height: 30px;
+    width: 30px;
+    fill: white;
+    margin: auto;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.test {
+    margin: auto;
+    height: 60px;
+    width: 3px;
+    background-color: white;
+    margin-bottom: 5px;
 }
