@@ -1,21 +1,10 @@
-.about {
-    display: block;
-    margin-bottom: 50px;
-}
-
-.about tbody {
-    width: 100%;
-    display: table;
-}
-
-.about img {
-    height: 300px;
-    float: right;
+.small-img {
+    max-height: 600px;
 }
 
 .threedmodel {
-    height: 1000px;
-    width: 1000px;
+    height: 650px;
+    width: 700px;
     --progress-bar-color: transparent;
     animation: blooping 3s ease infinite;
 }
@@ -34,29 +23,19 @@
     }
 }
 
-.about-logos {
-    display: grid;
-    width: 70px;
-}
-
-.about-logos a {
-    width: 30px;
-    margin: auto;
-}
-
-.about-logos a svg {
+.about-logos svg {
     height: 30px;
     width: 30px;
-    fill: white;
+    fill: var(--off-white);
     margin: auto;
     margin-bottom: 5px;
     cursor: pointer;
 }
 
-.test {
+.filling-bar {
     margin: auto;
-    height: 60px;
+    height: 100%;
     width: 3px;
-    background-color: white;
+    background-color: var(--off-white);
     margin-bottom: 5px;
 }
