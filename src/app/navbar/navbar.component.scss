@@ -1,29 +1,9 @@
-.navbar-logo {
-    height: 100%;
-    left: 10px;
-    top: 5px;
-    position: relative;
-}
-
-.navbar-nav {
-    margin: auto;
-    flex-direction: row;
-}
-
-.navbar-toggler {
-    border: 0px;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
 .nav-item {
-    margin-left: 10px;
+    padding: 0.5rem;
     cursor: pointer;
 }
 
-.nav-item:hover {
+.nav-item:hover, .navbar-brand:hover {
     background: var(--radial-gradient-light);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -32,10 +12,13 @@
 .navbar {  
     background-color: rgba(0, 0, 0, 0.3) !important;
     backdrop-filter: blur(5em);
-    position: fixed;
-    top: 0px;
-    width: 100%;
     box-shadow: 0 0 1em rgba(0, 0, 255, 0.027);
     height: 70px;
     z-index: 1;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    margin-right: 0px;
+    font-size: 25px;
 }
