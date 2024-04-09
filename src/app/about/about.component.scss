@@ -6,21 +6,6 @@
     height: 650px;
     width: 700px;
     --progress-bar-color: transparent;
-    animation: blooping 3s ease infinite;
-}
-
-@keyframes blooping {
-    0% {
-        transform: translate(0px, 0px);
-    }
-
-    50% {
-        transform: translate(0px, 30px);
-    }
-
-    100% {
-        transform: translate(0px, 0px);
-    }
 }
 
 .about-logos svg {
