@@ -9,6 +9,18 @@
     --radial-gradient-full: radial-gradient(circle at top left, #ee7752 0%, #e73c7e 35%, #23a6d5 65%, #23d5ab 100%);
 }
 
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
+
 .gradient-border-mask {
     display: flow-root;
     position: relative;
