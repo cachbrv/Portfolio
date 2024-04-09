@@ -2,9 +2,9 @@
     <h2 style="text-align: center; margin-bottom: 40px; position: relative;">&#60;skills&#47;&#62;</h2>
     <div class="card-deck card-group-skill">
         @for (skill of skills; track skill) {
-        <div class="card card-skill">
+        <div class="card card-skill" title="{{skill.name}}">
             <svg>
-                <image  [attr.xlink:href]="skill.url" />
+                <image [attr.xlink:href]="skill.url" />
             </svg>
         </div>
         }

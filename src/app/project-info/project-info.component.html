@@ -4,11 +4,12 @@
         @for (inf of info; track inf) {
         <div class="card card-info card">
             <div class="card-background card" style="width: 18rem;">
-                <img class="card-img-top" src="../../assets/mizy-screenshot.png" alt="Card image cap">
+                @if (inf.logo != "") {
+                    <img class="card-img-top" src="{{ inf.logo }}" alt="Card image cap">
+                }
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the
-                        card's content.</p>
+                    <h5 class="card-title">{{ inf.name }}</h5>
+                    <p class="card-text" innerHTML="{{ inf.info }}"></p>
                 </div>
                 <div class="card-footer">
                     <a href="{{inf.url}}" type="button" class="btn gradient-border-mask" target="_blank">

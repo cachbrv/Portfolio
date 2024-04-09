@@ -2,7 +2,15 @@
   {  
     "name": "C#",  
     "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/C_Sharp_Logo_2023.svg"
-  },  
+  },
+  {  
+    "name": "C++",  
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/640px-ISO_C%2B%2B_Logo.svg.png"
+  }, 
+  {  
+    "name": "Swift",  
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Swift_logo.svg/640px-Swift_logo.svg.png"
+  },
   {  
     "name": "JavaScript",  
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1280px-Unofficial_JavaScript_logo_2.svg.png"
@@ -18,13 +26,21 @@
   {  
     "name": "Sql",  
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sql_data_base_with_logo.svg/640px-Sql_data_base_with_logo.svg.png"
-  },  
-  {  
-    "name": "Swift",  
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Swift_logo.svg/640px-Swift_logo.svg.png"
-  },  
-  {  
-    "name": "C++",  
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/640px-ISO_C%2B%2B_Logo.svg.png"
+  },
+  {
+    "name": "Azure",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Microsoft_Azure_Logo.svg/640px-Microsoft_Azure_Logo.svg.png"
+  },
+  {
+    "name": "GIT",
+    "url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Git-logo-orange.svg/640px-Git-logo-orange.svg.png"
+  },
+  {
+    "name": "Docker",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Docker-svgrepo-com.svg/640px-Docker-svgrepo-com.svg.png"
+  },
+  {
+    "name": "Windows",
+    "url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Windows_logo_-_2021.svg/512px-Windows_logo_-_2021.svg.png"
   }
 ]
