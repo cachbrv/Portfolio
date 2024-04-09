@@ -65,7 +65,7 @@ export class AboutComponent {
       let notTooFar = (Math.abs(midX - e.clientX) < 400) && (Math.abs(midY - e.clientY) < 400);
       if (!notTooFar) {
         if (modelViewer.cameraOrbit != `${15}deg ` + `${90}deg ` + `"0%"`) {
-          modelViewer.cameraOrbit = `${15}deg ` + `${90}deg ` + `"0%"`;
+          // modelViewer.cameraOrbit = `${15}deg ` + `${90}deg ` + `"0%"`;
         }
       }
       else {
@@ -73,7 +73,7 @@ export class AboutComponent {
         let ydeg = midY > e.clientY ? "110" : (midY < e.clientY ? "50" : "90");
 
         if (modelViewer.cameraOrbit != `${xdeg}deg ` + `${ydeg}deg ` + `"0%"`) {
-          modelViewer.cameraOrbit = `${xdeg}deg ` + `${ydeg}deg ` + `"0%"`;
+          // modelViewer.cameraOrbit = `${xdeg}deg ` + `${ydeg}deg ` + `"0%"`;
         }
       }
     }
