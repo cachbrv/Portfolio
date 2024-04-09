@@ -6,13 +6,14 @@ import { ProjectInfoComponent } from './project-info/project-info.component';
 import { SkillInfoComponent } from './skill-info/skill-info.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { FooterComponent } from './footer/footer.component';
 import _projectInfo from '../assets/ProjectInfo.json';
 import _skilltInfo from '../assets/Skills.json';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, NavbarComponent, CarrouselComponent, ProjectInfoComponent, SkillInfoComponent, ContactComponent, AboutComponent],
+  imports: [CommonModule, NavbarComponent, CarrouselComponent, ProjectInfoComponent, SkillInfoComponent, ContactComponent, AboutComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -1,0 +1,34 @@
+ ___ ___ 
+ / __/ __|
+| (_| (__ 
+ \___\___|
+
+The humans.txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+DESIGNER
+
+Camila Chabane
+Hand crafted design & web development
+
+Design tools:
+Photoshop
+
+3D Asset:
+"Minimalistic 3D Pc Desktop" (https://skfb.ly/oFwuq) by Priyanshah is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+_______________________________________________________________________________
+
+TECHNOLOGY
+
+Angular
+Google's model-viewer
+Three.js
+
+_______________________________________________________________________________
+
+FONTS
+
+Poppins
