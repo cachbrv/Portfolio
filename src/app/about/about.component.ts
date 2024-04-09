@@ -12,9 +12,28 @@ import { ModelViewerElement } from '@google/model-viewer';
 export class AboutComponent {
   goingLeft: boolean = true;
 
+  @HostListener('window:resize', ['$event'])
+
+  onResize() {
+    const modelViewer = document.querySelector<ModelViewerElement>("#myModel");
+
+    if (window.innerWidth <= 600) {
+      modelViewer!.style.minHeight = "385px";
+    }
+    else {
+      const modelViewer = document.querySelector<ModelViewerElement>("#myModel");
+      modelViewer!.style.minHeight = "600px";
+    }
+  }
+
   @HostListener('document:DOMContentLoaded', ['$event'])
 
   onLoad() {
+    this.onResize();
+    this.animateModel();
+  }
+
+  animateModel() {
     // Animation rotating the 3dmodel from left to right
     const modelViewer = document.querySelector<ModelViewerElement>("#myModel");
     const values = modelViewer!.cameraOrbit.split(' ');
@@ -31,7 +50,7 @@ export class AboutComponent {
 
     // Rotating model on y axis
     modelViewer!.cameraOrbit = `${yaxis}deg ` + `${values[1]} ` + `${values[2]}`;
-    window.requestAnimationFrame(() => this.onLoad());
+    window.requestAnimationFrame(() => this.animateModel());
   }
 
   @HostListener('document:mousemove', ['$event'])
