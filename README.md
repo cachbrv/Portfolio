@@ -1,27 +1,50 @@
-# Portfolio
+<div align="center">
+  <img alt="Logo" src="https://www.cachbrvs.dev/assets/icon.png" width="100" />
+</div>
+<h1 align="center">
+  cachbrvs.dev
+</h1>
+<p align="center">
+  My personal portfolio <a href="https://www.cachbrvs.dev" target="_blank">cachbrvs.dev</a> built with <a href="https://angular.io" target="_blank">Angular</a> and hosted with <a href="https://www.vercel.com/" target="_blank">Vercel</a>
+</p>
+<p align="center">
+  <a href="https://vercel.com/cachbrvs-projects/portfolio" target="_blank">
+    <img src="https://therealsujitk-vercel-badge.vercel.app/?app=portfolio-cachbrvs-projects" alt="Vercel Status" />
+  </a>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+<div align="center">
+    <img src="https://www.cachbrvs.dev/assets/portfolio.png">
+</div>
 
-## Development server
+## 🚨 Forking this repo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Yes, you can fork this repo. Please give me proper credit by linking back to [cachbrvs.dev](https://www.cachbrvs.dev). Thanks!
 
-## Code scaffolding
+## 🛠 Installation & Set Up
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Install
 
-## Build
+   ```sh
+   npm install
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4. Start the development server
 
-## Running unit tests
+   ```sh
+   ng serve
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🚀 Building and Running for Production
 
-## Running end-to-end tests
+1. Generate a full static production build
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```sh
+   npm run build
+   ```
 
-## Further help
+1. Preview the site as it will appear once deployed
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```sh
+   npm run serve
+   ```
