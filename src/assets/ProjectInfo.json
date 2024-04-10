@@ -10,14 +10,14 @@
     "id": 2,  
     "name": "Mizy",  
     "info": "Mizy is an application that will allow you to regroup all your conversations from different social network. Part of EIP project from Epitech.<br>#swift",  
-    "url": "https://github.com/cachbrv/Mizy",
+    "url": "https://github.com/cachbrv/",
     "logo": "../../assets/mizy-screenshot.png"
   },  
   {  
     "id": 3,  
     "name": "My Portfolio",  
     "info": "Having a blast creating this website from scratch and dabing in a bit of design ! <br>#angular",  
-    "url": "https://github.com/cachbrv",
+    "url": "https://github.com/cachbrv/Portfolio",
     "logo": "../../assets/portfolio.png"
   },
   {  

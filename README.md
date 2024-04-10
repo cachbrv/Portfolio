@@ -29,7 +29,11 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [ca
    npm install
    ```
 
-4. Start the development server
+2. Configuring
+
+You can configure your own skills and projects info by updating ```/app/Skills.json``` and ```/app/ProjectInfo.json``` respectively.
+
+3. Start the development server
 
    ```sh
    ng serve
@@ -43,7 +47,7 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [ca
    npm run build
    ```
 
-1. Preview the site as it will appear once deployed
+2. Preview the site as it will appear once deployed
 
    ```sh
    npm run serve
