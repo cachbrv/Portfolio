@@ -1,7 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
-import { CarrouselComponent } from './carrousel/carrousel.component';
 import { ProjectInfoComponent } from './project-info/project-info.component';
 import { SkillInfoComponent } from './skill-info/skill-info.component';
 import { ContactComponent } from './contact/contact.component';
@@ -19,7 +18,6 @@ inject();
   imports: [ 
          CommonModule,
          NavbarComponent,
-         CarrouselComponent,
          ProjectInfoComponent,
          SkillInfoComponent,
          ContactComponent,
