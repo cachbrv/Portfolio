@@ -12,6 +12,11 @@ import { ModelViewerElement } from '@google/model-viewer';
 export class AboutComponent {
   goingLeft: boolean = true;
 
+  ngOnInit() {
+    this.onResize();
+    this.animateModel();
+  }
+
   @HostListener('window:resize', ['$event'])
 
   onResize() {
@@ -24,13 +29,6 @@ export class AboutComponent {
       const modelViewer = document.querySelector<ModelViewerElement>("#myModel");
       modelViewer!.style.minHeight = "600px";
     }
-  }
-
-  @HostListener('document:DOMContentLoaded', ['$event'])
-
-  onLoad() {
-    this.onResize();
-    this.animateModel();
   }
 
   animateModel() {
